@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:body>
+	<b:growl allowDismiss="true" delay="10000" escape="true" />
+	<b:navBar brand="Members online database" brandHref="#" inverse="true"
+		fixed="top">
+		<h:form styleClass="navbar-form navbar-right">
+			<c:if test="#{empty request.userPrincipal}">
+				<b:inputText value="#{loginBacking.name}" placeholder="First Name"
+					fieldSize="sm" />
+				<b:inputSecret value="#{loginBacking.password}"
+					placeholder="Password" fieldSize="sm" />
+				<b:commandButton action="#{loginBacking.login()}" value="Sign in"
+					look="primary" icon="chevron-right" iconAlign="right" />
+			</c:if>
+			<c:if test="#{not empty request.userPrincipal}">
+				<h:outputText style="color:white"
+					value="Witaj #{request.userPrincipal.name}   " />
+				<b:commandButton action="#{logoutBacking.logout()}" value="Sign out"
+					icon="chevron-right" iconAlign="right" />
+
+			</c:if>
+		</h:form>
+	</b:navBar>
+</h:body>
+</html>

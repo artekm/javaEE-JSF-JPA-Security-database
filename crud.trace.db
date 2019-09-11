@@ -1,0 +1,156 @@
+2019-08-26 18:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+DROP TABLE CUSTOMER [42102-196]
+2019-08-26 18:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+DROP TABLE CUSTOMER [42102-196]
+2019-08-26 18:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+DROP TABLE CUSTOMER [42102-196]
+2019-08-26 18:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+DROP TABLE CUSTOMER [42102-196]
+2019-08-26 18:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+DROP TABLE CUSTOMER [42102-196]
+2019-08-26 18:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 19:09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 19:15:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 19:25:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:23:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:25:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:26:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:28:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:31:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:33:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:38:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:39:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:41:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:45:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:56:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:57:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:58:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 20:59:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 21:01:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 21:03:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 21:05:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 23:55:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-26 23:58:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 00:01:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 11:58:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 12:04:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 12:09:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 12:22:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 13:43:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 14:47:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 15:48:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 15:54:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 15:59:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]
+2019-08-27 16:34:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "CUSTOMER" nie istnieje
+Table "CUSTOMER" not found; SQL statement:
+SELECT 1 FROM CUSTOMER [42102-196]

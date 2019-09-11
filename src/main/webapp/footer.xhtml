@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:body>
+	<b:navBar fixed="bottom" brand="(C)2019 AM and family"
+		contentDisabled="true">
+		<h:form styleClass="navbar-form navbar-right">
+			<b:selectOneMenu value="#{theme.internalTheme}" ajax="true" process="@form" update="@parent">
+				<f:facet name="prepend">
+					<h:outputText value="Motyw" />
+				</f:facet>
+				<f:selectItems value="#{theme.themes}" var="th" itemValue="#{th}"
+					itemLabel="#{th}" />
+			</b:selectOneMenu>
+		</h:form>
+	</b:navBar>
+</h:body>
+</html>

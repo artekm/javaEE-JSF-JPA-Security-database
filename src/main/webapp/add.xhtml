@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<ui:composition template="template1.xhtml">
+	<ui:define name="content">
+		<b:panel span="4" offset="4">
+			<h3 style="text-align: center; white-space: nowrap;">Add a new
+				member</h3>
+
+			<h:form id="add">
+				<b:inputText id="firstName" label="First name"
+					value="#{customersBacking.customer.firstName}" />
+				<b:message for="firstName" />
+
+				<b:inputText id="lastName" label="Last name"
+					value="#{customersBacking.customer.lastName}" />
+				<b:message for="lastName" />
+
+				<b:dateTimePicker id="dayOfBirth" label="Day of birth"
+					value="#{customersBacking.customer.dayOfBirth}" format="DD.MM.YYYY"
+					mask="true">
+					<f:convertDateTime type="localDate" pattern="dd.MM.yyyy" />
+				</b:dateTimePicker>
+				<b:message for="dayOfBirth" />
+
+				<b:inputSecret id="password" label="Password"
+					value="#{customersBacking.customer.password}" />
+				<b:message for="password" />
+
+				<b:commandButton value="Add member" look="primary"
+					action="#{customersBacking.add()}"/>
+					
+				<b:commandButton value="Zamknij" look="secondary"
+					action="index.xhtml?faces-redirect=true" immediate="true">
+				</b:commandButton>
+			</h:form>
+		</b:panel>
+	</ui:define>
+</ui:composition>
+</html>

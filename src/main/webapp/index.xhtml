@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<ui:composition template="template1.xhtml">
+	<ui:define name="content">
+		<h:form id="customers">
+			<b:container>
+				<h3 style="text-align: center; white-space: nowrap;">Defined
+					members</h3>
+				<b:dataTable id="customerList" var="customer" paginated="false"
+					searching="false" info="false"
+					value="#{customersBacking.customers}">
+					<b:dataTableColumn value="#{customer.id}" />
+					<b:dataTableColumn label="First name" value="#{customer.firstName}" />
+					<b:dataTableColumn label="Last name" value="#{customer.lastName}" />
+					<b:dataTableColumn label="Day of birth">
+						<h:outputText value="#{customer.dayOfBirth}">
+							<f:convertDateTime type="localDate" pattern="dd.MM.yyyy" />
+						</h:outputText>
+					</b:dataTableColumn>
+					<b:dataTableColumn value="#{customer.password}" />
+					<b:dataTableColumn label="">
+						<c:if test="#{not empty request.userPrincipal}">
+							<b:commandButton ajax="true" style="width:50px"
+								update=":customers" size="xs" value="Delete"
+								action="#{customersBacking.delete(customer)}">
+							</b:commandButton>
+							<b:commandButton value="Edit" size="xs" style="width:50px"
+								ajax="true" update=":editForm"
+								action="#{customersBacking.edit(customer)}"
+								oncomplete="$('.modalPseudoClass1').modal('show')" />
+						</c:if>
+					</b:dataTableColumn>
+				</b:dataTable>
+				<c:if test="#{not empty request.userPrincipal}">
+					<b:commandButton value="Add member" action="add.xhtml"
+						look="primary" />
+					<b:commandButton value="Add by dialog form" look="primary"
+						action="#{customersBacking.clear()}" ajax="true" update=":addForm"
+						resetValues="true"
+						oncomplete="$('.modalPseudoClass2').modal('show')" />
+				</c:if>
+			</b:container>
+		</h:form>
+
+		<b:modal id="addModal" title="Add a new member" span="4" offset="4"
+			style="margin-top: 50px;" styleClass="modalPseudoClass2"
+			closable="false" close-on-escape="false" backdrop="false">
+
+			<h:form id="addForm">
+				<b:inputText id="firstName" label="First name"
+					value="#{customersBacking.customer.firstName}" />
+				<b:message for="firstName" />
+
+				<b:inputText id="lastName" label="Last name"
+					value="#{customersBacking.customer.lastName}" />
+				<b:message for="lastName" />
+
+				<b:dateTimePicker id="dayOfBirth" label="Day of birth"
+					value="#{customersBacking.customer.dayOfBirth}" format="DD.MM.YYYY"
+					mask="true">
+					<f:convertDateTime type="localDate" pattern="dd.MM.yyyy" />
+				</b:dateTimePicker>
+				<b:message for="dayOfBirth" />
+
+				<b:inputSecret id="password" label="Password"
+					value="#{customersBacking.customer.password}" />
+				<b:message for="password" />
+
+				<b:commandButton value="Add member" look="primary"
+					action="#{customersBacking.add}" ajax="true"
+					update=":addForm :customers"
+					oncomplete="if(!validationFailed) {$('.modalPseudoClass2').modal('hide')} " />
+				<b:commandButton value="Zamknij" look="secondary"
+					action="#{customersBacking.clear()}" ajax="true" update=":addForm"
+					oncomplete="{$('.modalPseudoClass2').modal('hide')}"
+					immediate="true" resetValues="true">
+				</b:commandButton>
+				<b:fetchBeanInfos />
+			</h:form>
+		</b:modal>
+
+		<b:modal id="editModal" title="Edit member" span="4" offset="4"
+			style="margin-top: 50px;" styleClass="modalPseudoClass1"
+			closable="false" close-on-escape="false" backdrop="false">
+
+			<h:form id="editForm">
+				<b:inputText id="firstName" label="First name"
+					value="#{customersBacking.customer.firstName}" />
+				<b:message for="firstName" />
+
+				<b:inputText id="lastName" label="Last name"
+					value="#{customersBacking.customer.lastName}" />
+				<b:message for="lastName" />
+
+				<b:dateTimePicker id="dayOfBirth" label="Day of birth"
+					value="#{customersBacking.customer.dayOfBirth}" format="DD.MM.YYYY"
+					mask="true">
+					<f:convertDateTime type="localDate" pattern="dd.MM.yyyy" />
+				</b:dateTimePicker>
+				<b:message for="dayOfBirth" />
+
+				<b:inputSecret id="password" label="Password"
+					value="#{customersBacking.customer.password}" />
+				<b:message for="password" />
+
+				<b:commandButton value="Update" look="primary"
+					action="#{customersBacking.update}" ajax="true"
+					update=":addForm :customers"
+					oncomplete="if(!validationFailed) {$('.modalPseudoClass1').modal('hide')} " />
+				<b:commandButton value="Zamknij" look="secondary" ajax="true"
+					update=":addForm"
+					oncomplete="{$('.modalPseudoClass1').modal('hide')}"
+					immediate="true">
+				</b:commandButton>
+				<b:fetchBeanInfos />
+			</h:form>
+		</b:modal>
+
+	</ui:define>
+</ui:composition>
+</html>
